@@ -17,6 +17,10 @@ body.fixed {
     overflow-y: hidden
 }
 
+body.fixed>.header{
+    background-color: #cc7f7a
+}
+
 h1,
 h2,
 h3,
@@ -161,7 +165,7 @@ input:focus {
     transition: background .2s linear
 }
 
-.nav_toggle.active .nav_toggle_item {
+.nav_toggle.open .nav_toggle_item {
     background: rgba(0, 0, 0, 0)
 }
 
@@ -188,14 +192,14 @@ input:focus {
     top: -8px
 }
 
-.nav_toggle.active .nav_toggle_item:after {
+.nav_toggle.open .nav_toggle_item:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     bottom: 0
 }
 
-.nav_toggle.active .nav_toggle_item:before {
+.nav_toggle.open .nav_toggle_item:before {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
